@@ -1,1 +1,2 @@
-# gcpcode
+# gcpproject
+run,sql,bucket
