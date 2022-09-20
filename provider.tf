@@ -1,5 +1,12 @@
 terraform {
-  
+  backend "remote" {
+    hostname      = "app.terraform.io"
+    organization  = "devopsg2022"
+
+    workspaces {
+      name = "gcpcode"
+    }
+  }
   required_providers {
     google = {
       source = "hashicorp/google"
